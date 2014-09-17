@@ -1,6 +1,6 @@
 # Jenks
 
-TODO: Write a gem description
+Implementation of Jenks' Natural Breaks Algorithm in Ruby. I converted it from [Tom MacWright's original Javascript](github.com/tmcw/simple-statistics) into Ruby, and then optimized it for Ruby's strengths.
 
 ## Installation
 
@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Jenks adds a single method, #jenks to the Array class.
+
+    data = (1..20).to_a + (41..60).to_a + (81..100).to_a # Three distinct sets in one array
+    data.jenks(3) # [1,20,60,100]
 
 ## Contributing
 
