@@ -4,7 +4,7 @@ require_relative '../lib/array'
 
 def generate_random_data(x)
   Array.new.tap do |a|
-    x.times {a << rand(1000)}
+    x.times { a << rand(1000) }
   end
 end
 
@@ -17,8 +17,8 @@ Benchmark.ips do |x|
   # million  = generate_random_data(1_000_000)
   # fourmillion  = generate_random_data(4_000_000) # square kilo, 2 meter squares
 
-  x.report('ten')      { ten.jenks(5)  }
-  x.report('hundred')  { hundred.jenks(5)  }
+  x.report('ten')      { ten.jenks(5) }
+  x.report('hundred')  { hundred.jenks(5) }
   x.report('thousand') { thousand.jenks(5) }
   # x.report('tenthou')  { tenthou.jenks(5)  }
   # x.report('hundthou') { hundthou.jenks(5) }

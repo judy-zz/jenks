@@ -26,8 +26,6 @@ class Array
     # we only need lower class limits here
     lower_class_limits = matrices[:lower_class_limits]
 
-    # binding.pry
-
     # extract n_classes out of the computed matrices
     return jenksBreaks(data, lower_class_limits, n_classes)
   end
