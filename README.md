@@ -25,8 +25,13 @@ Jenks adds a single method, #jenks to the Array class.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/jenks/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. Fork it ( https://github.com/judy/jenks/fork )
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Install development gems (`bundle install`)
+1. Benchmark with `ruby benchmarks/array_benchmark.rb`
+1. Fix bugs or add a feature.
+1. Verify everything passes (`rspec`)
+1. Benchmark again, leave the code as fast or faster than when you forked.
+1. Commit your changes (`git commit -am 'Add some feature'`)
+1. Push to the branch (`git push origin my-new-feature`)
+1. Create a new pull request.
